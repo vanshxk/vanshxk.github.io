@@ -1,0 +1,369 @@
+										/*Logo designing*/
+#logoResize a img
+{
+	height: 55px;
+	width: 158px;
+	margin-left: -13px;
+	margin-top: -15px;
+}
+										/* Navbar resizing */
+#setHeight
+{
+	height: 55px;
+}
+.myNavbar2 li a
+{
+	padding-bottom: 19px;
+}
+#myNavbar1
+{
+	background-color: black;
+}
+#searchBar1
+{
+	width: 201px;
+}
+.myNavbar2 li a
+{
+	color: cyan !important;
+}
+.dropdownColor1 ul
+{
+	background: black;
+}
+
+
+											/* Carousel designing */
+#myCarousel .item
+{
+	height: 600px;
+	width: 100%;
+}
+#slide1
+{
+	background: url("../images/corrosive1.jpg") top center no-repeat;
+	background-size: 100% 600px;
+}
+#slide2
+{
+	background: url("../images/corrosive2.jpg") top center no-repeat;
+	background-size: 100% 600px;
+}
+#slide3
+{
+	background: url("../images/corrosive3.jpg") top center no-repeat;
+	background-size: 100% 600px;
+}
+#slide4
+{
+	background: url("../images/corrosive4.jpg") top center no-repeat;
+	background-size: 100% 600px;
+}
+
+												/* Media queries */
+
+/* Portrait and mobile view */
+/*@media (max-width: 480px)
+{*/
+	/*#myCarousel .item
+	{
+		height: 601px;
+	}
+	#slide1
+	{
+		background: url("../images/corrosive1.jpg") top center no-repeat;
+		background-size: 200px 200px;
+	}
+	#slide2
+	{
+		background: url("../images/corrosive2.jpg") top center no-repeat;
+		background-size: 200px 200px;
+	}
+	#slide3
+	{
+		background: url("../images/corrosive3.jpg")  top center no-repeat;
+		background-size: 200px 200px;
+	}
+	#slide4
+	{
+		background: url("../images/corrosive4.jpg") top center no-repeat;
+		background-size: 200px 200px;
+	}
+
+	blockquote
+	{
+		font-weight: bold;
+		font-size: 13px;
+		color: brown
+	}
+	.carousel-caption p
+	{
+		font-size: 10px;
+	}*/
+/*}*/
+
+
+							/* Landscape phone to portrait tablet medium */
+/*@media (max-width: 768px)
+{
+	#myCarousel .item
+	{
+		height: 210px;
+	}
+	#slide1
+	{
+		background: url("../images/corrosive1.jpg") top center no-repeat;
+		background-size: 400px 400px;
+	}
+	#slide2
+	{
+		background: url("../images/corrosive2.jpg") top center no-repeat;
+		background-size: 400px 400px;
+	}
+	#slide3
+	{
+		background: url("../images/corrosive3.jpg") top center no-repeat;
+		background-size: 400px 400px;
+	}
+	#slide4
+	{
+		background: url("../images/corrosive4.jpg") top center no-repeat;
+		background-size: 400px 400px;
+	}
+	.carousel-caption h3
+	{
+		font-weight: bold;
+		font-size: 12px;
+		color: brown;
+	}
+	blockquote p
+	{
+		font-size: 4px;
+	}
+
+}
+
+
+ Large desktop 
+@media (max-width: 1200px)
+{
+	#myCarousel .item
+	{
+		height: 601px;
+	}
+	#slide1
+	{
+		background: url("../images/corrosive1.jpg") top center no-repeat;
+		background-size: 376px 601px;
+	}
+	#slide2
+	{
+		background: url("../images/corrosive2.jpg") top center no-repeat;
+		background-size: 376px 601px;
+	}
+	#slide3
+	{
+		background: url("../images/corrosive3.jpg") top center no-repeat;
+		background-size: 376px 601px;
+	}
+	#slide4
+	{
+		background: url("../images/corrosive4.jpg") top center no-repeat;
+		background-size: 376px 601px;
+	}
+
+	.carousel-caption h3
+	{
+		font-weight: bold;
+		font-size: 25px;
+		color: brown;
+	}
+	blockquote p
+	{
+		font-size: 12px;
+		color:white;
+	}
+	
+
+}*/
+
+.drStrangeText h3
+{
+	color: #00FFFF !important;
+}
+.carousel-caption h3
+{
+	color: brown;
+	font-weight: bold;
+}
+
+
+
+									/* Designing the well */
+body
+{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+.alert
+{
+	margin-top: 15px;
+	display: none;
+}
+
+.well .page-header
+{
+	margin-top: 0;
+}
+.well .page-header h1
+{
+	margin-top: 0;
+}
+.well
+{
+	margin: 15px 0;
+}
+
+									/* Google font in well */
+.googleFontWell h1
+{
+	font-family: 'Pacifico', cursive;
+}
+.googleFontWell p
+{
+	font-family: 'Dancing Script', cursive;
+}
+.row .googleFontCategories h2
+{
+	font-family: 'Architects Daughter', cursive;
+}
+
+
+									/* Three section images */
+#column1
+{
+	text-align: center;
+}
+.positionHeading h3
+{
+	margin-left: 60px;
+	font-weight: bold;
+	color: #666;
+	margin-top: 5px;
+}
+
+.column1 img
+{
+	margin: 7px 32px 17px;
+	width: 216px;
+	height: 231px;
+}
+
+
+.googleLatestUpdates
+{
+	font-family: 'Taviraj', serif;
+}
+.googleFontBoxOffice h4
+{
+	font-family: 'Ravi Prakash', cursive;
+	font-size: 35px;
+}
+
+#pill1 img
+{
+	height: 10% !important;
+	width: 20%;
+	margin: 0 12px 0px 0;
+}
+#pill2 img
+{
+	height: 10% !important;
+	width: 20%;
+	margin: 0 12px 0px 0;
+}
+
+
+
+									/* Footer Styling */
+
+/*footer #footerIcons1 										/* Positioning left panel*/
+/*{
+	height: 100 Positioning and styling middle listpx;
+	position: relative;
+	top: -25px;
+	left: 13px;
+}*/
+
+.image1:hover img 											/* Hover over effects and transition to each image */
+{
+	transform: scale(1.1,1.1);
+	transition: all 0.5s ease-in-out;
+}
+
+/*.price
+{
+	font-size: 15px;
+	position: relative;
+	left: 76px;
+	padding: 3px;
+	bottom: 15px;
+}
+*/
+.footerIcons1 i 										/* Styling icons on left panel */
+{
+	color: white;
+	padding: 2px;
+	margin-top: 31px;
+}
+footer h4													/* Positioning text heading on left panel */
+{
+	position: relative;
+	top: 12px;
+	z-index: 1;
+	color: white;
+}
+
+.footerIcons3 img 								/* Resizing fotter icons on right side */
+{
+	padding: 4px;
+	width: 256px;
+	height: 78px;
+}
+
+footer 														/* Styling and positioning full footer*/
+{
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+	width: 100%;
+}
+.unstyled
+{
+	list-style: none;
+	padding: 0px;
+}
+.middleList ul
+{
+	font-style: italic;
+	font-family: monospace;
+	font-size: 18px;
+	color: white;
+	padding-top: 4px;
+}
+.middleList a
+{
+	color: white;
+}
+
+.middleList h6
+{
+	font-style: italic;
+	font-family: monospace;
+	font-size: 25px;
+}
+
+.list-group-item h3, .list-group-item p {
+	margin: 0;
+}

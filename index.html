@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<title>Movie review</title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css"> <!-- Referencing downloaded fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Taviraj" rel="stylesheet">
+
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->	
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		
+</head>
+	<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="setHeight" role="banner">
+  		<div class="container-fluid">
+    		<div class="navbar-header" id="logoResize">
+                                          <!-- Toggle button -->
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+      		</button>
+      			<a class="navbar-brand" href="#"><img src="images/Logo1.png" alt="Movie Review"> </a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar1">
+    		  <ul class="nav navbar-nav myNavbar2">
+      			<li class="active"><a href="#">Home</a></li>
+      			<li class="dropdown dropdownColor1">													<!-- Drop down -->
+      				<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Movies <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+          				<li><a href="#"> Most viewed </a></li>
+          				<li><a href="#"> In Theatres </a></li>
+          				<li><a href="#"> Coming soon </a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header"> More Services </li>
+          				<li><a href="#"> Best rated </a></li>
+                  <li><a href="#"> Tv Serials </a></li>
+                  <li><a href="#"> Watchlist </a></li>
+        			</ul>
+     		 	</li>
+      			<li class="dropdown dropdownColor1">
+      				<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Genre <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+          				<li><a href="#">  Romance </a></li>
+          				<li><a href="#">  Action </a></li>
+          				<li><a href="#">  Comedy </a></li>
+          				<li><a href="#"> Mystery </a></li>
+        			</ul>
+     		 	</li>
+     	 		<li><a href="#">Top Rated</a></li> 
+    		</ul>
+        <form class="navbar-form navbar-left">                      <!-- Search bar -->
+          <input type="text" class="form-control" placeholder="Search movies here.." id="searchBar1">
+          <button type="submit" class="btn btn-default btn-md"><span class="glyphicon glyphicon-search"></span> 
+          </button>
+        </form>
+    		<ul class="nav navbar-nav navbar-right">
+      			
+      			<li class="dropdown">
+      				<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Varun Sahni <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+          				<li><a href="#"> <span class="glyphicon glyphicon-wrench"></span> Setting </a></li>
+          				<li><a href="#"> <span class="glyphicon glyphicon-refresh"></span> Update Profile </a></li>
+          				<li><a href="#"> <span class="glyphicon glyphicon-earphone"></span> Contact us </a></li>
+                  <li class="divider"></li>
+          				<li><a href="#"> <span class="glyphicon glyphicon-off"></span> Signout </a></li>
+        			</ul>
+     		 	</li>
+
+      			<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact us </a></li>
+    		</ul>
+  		</div>
+  		</div>
+	</nav>										<!-- Navbar ends -->
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">		<!-- Carousel starts-->
+  
+
+  									<!-- Indicators -->
+  		<ol class="carousel-indicators">
+    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    		<li data-target="#myCarousel" data-slide-to="1"></li>
+    		<li data-target="#myCarousel" data-slide-to="2"></li>
+    		<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+
+  								<!-- Wrapper for slides -->
+  		<div class="carousel-inner" role="listbox">
+    		<div class="item active" id="slide1">
+      			<!-- <img src="images/corrosive1.jpg" alt="Twilight"> -->
+      			<div class="carousel-caption">
+      				<h3> Twilight </h3>
+      				<p> <abbr>The Twilight</abbr> released on <small>July 18</small> 2012 </p>
+      			</div>
+    		</div>
+
+    		<div class="item" id="slide2">
+      			<!-- <img src="images/corrosive2.jpg" alt="Pirate of Carrabian"> -->
+      			<div class="carousel-caption">
+      				<h3> Pirates of Caribbean </h3>
+      				<p> <blockquote> The Curse of the Black Pearl (2003)</blockquote> </p>
+      			</div>
+    		</div>
+
+    		<div class="item" id="slide3">
+      			<!-- <img src="images/corrosive3.jpg" alt="Harry Potter"> -->
+      			<div class="carousel-caption">
+      			<h3> Harry Potter </h3>
+      			<p><blockquote> Harry Potter written by J. K. Rowling</blockquote></p>
+    			</div>
+    		</div>
+
+    		<div class="item" id="slide4">
+      			<!-- <img src="images/corrosive4.jpg" alt="Doctor Strange"> -->
+      			<div class="carousel-caption drStrangeText">
+      			<h3> Doctor Strange </h3>
+      			<p><blockquote> Dr Strange's life changes after car accident</blockquote></p>
+    			</div>
+  			</div>
+
+  						<!-- Left and right controls -->
+  			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
+	</div>														             <!-- Corousel ends-->
+
+
+	<div class="container">
+    <div class="row" id="bigrow">
+      <div class="col-lg-12">
+                                    <!-- Alert message -->
+        <div class="alert alert-success alert-block fade in" id="successMessage">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h4> Success </h4>
+          <p> This movie costs you rs 500. Thank you for using our service</p>
+        </div>
+                                    <!-- Visible on small devices -->
+        <div class="well well-sm visible-sm">
+          <a href="btn btn-lg btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Feel free to call us </a>
+        </div>              
+                                                      <!-- Big callout -->
+        <div class="well well-sm googleFontWell">
+          <div class="page-header">
+            <h1> Latest in sale <small> Get 50% off Offer valid for 2 days </small></h1>
+          </div>                                  <!-- Page header ends -->
+          <p class="lead"> Doctor Strange is a 2016 American superhero film featuring the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the fourteenth film of the Marvel Cinematic Universe (MCU) </p>
+          <a href="#" class="btn btn-success btn-md" role="button" id="hideUnhide"> Buy now </a>
+          <a href="#" class="btn btn-link btn-md" role="button"> or Watch online </a>
+        </div>                                    <!-- Well ends -->
+      </div>                                      <!-- Column 12 ends -->
+    </div>		                                    <!-- Big callout ends-->
+
+                                  <!-- Three column section -->
+
+      <div class="row" id="aboveThreeColumn">
+        <div class="col-lg-12 googleFontCategories">
+          <h2> Categories </h2>
+          <p class="lead"> Fam pickled affogato blue bottle 90's raw denim. Copper mug offal fap activated charcoal yr, chia polaroid keffiyeh leggings </p>
+        </div>                                      <!-- Column 12 ends -->
+      </div>                                        <!-- Above three column ends -->
+
+                                    <!-- Three column-->
+
+      <div class="row positionHeading" id="threeColumnPictures">
+        <div class="col-sm-4 column1">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> Romantic movies </h3>
+            </div>                                  <!-- Panel heading end -->
+            <div class="image1"><img src="images/theLuckyOne.jpg" alt="The Lucky One" class="img-circle"></div>
+            <p> Fam pickled affogato blue bottle 90's raw denim. Copper mug offal fap activated charcoal yr, chia polaroid keffiyeh leggings </p>
+            <a href="http://www.imdb.com/title/tt1327194/" target="_blank" class="btn btn-primary btn-block"> The Lucky One</a>
+          </div>                                  <!-- Panel end -->
+        </div>                                    <!-- Column 1 ends-->
+
+        <div class="col-sm-4 column1">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> Action movies </h3>
+            </div>                                  <!-- Panel heading end -->
+            <div class="image1"><img src="images/avengers.jpg" alt="Avengers" class="img-circle"></div>
+            <p> Fam pickled affogato blue bottle 90's raw denim. Copper mug offal fap activated charcoal yr, chia polaroid keffiyeh leggings </p>
+            <a href="http://www.imdb.com/title/tt0848228/" target="_blank" class="btn btn-warning btn-block"> Avengers </a>
+          </div>                                  <!-- Panel end -->
+        </div>                                    <!-- Column 2 ends-->
+
+        <div class="col-sm-4 column1">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> Comedy movies </h3>
+            </div>                           <!-- Panel heading end -->
+            <div class="image1"><img src="images/dumbAndDumber.png" alt="Dumb and Dumber" class="img-circle"></div>
+            <p> Fam pickled affogato blue bottle 90's raw denim. Copper mug offal fap activated charcoal yr, chia polaroid keffiyeh leggings </p>
+            <a href="http://www.imdb.com/title/tt0109686/" target="_blank" class="btn btn-danger btn-block"> Dumb and Dumber </a>
+          </div>                                  <!-- Panel end -->
+        </div>
+      </div>                                    <!-- Column 3 ends-->
+
+                                        <!-- Extra -->
+        <hr>
+        <div class="row" id="Extra">
+          <div class="col-sm-6 googleLatestUpdates">
+            <h3> Latest Updates </h3>
+                                <!-- <div class="tabbable"> -->
+            <ul class="nav nav-pills">
+              <li class="active"><a data-toggle="pill" href="#pill1"> Bollywood </a></li>
+              <li><a data-toggle="pill" href="#pill2"> Hollywood </a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="pill1" class="tab-pane fade in active">
+                <h4> <span class="glyphicon glyphicon-mao-mapmarker"></span> Doctor Strange <small> Trending in theatres </small> </h4>
+                <div class="image1"><img src="images/ShraddhaKapoor1.jpg" class="thumbnail pull-left"></div>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                <hr>
+
+                <div class="image1"><img src="images/PreityZinta.jpg" class="thumbnail pull-left"></div>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                <hr>
+                <div class="image1"><img src="images/SonakshiSinha.jpg" class="thumbnail pull-left"></div>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                <hr>
+                <div class="image1"><img src="images/AnushkaSharma.jpg" class="thumbnail pull-left"></div>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                <hr>
+                <div class="image1"><img src="images/yamiGautam.jpg" class="thumbnail pull-left"></div>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+                <hr>
+
+              </div>
+              <div id="pill2" class="tab-pane fade">
+                <h4> Hollywood news </h4>
+                <div class="image1"><img src="images/EmmaWatson.jpg" class="thumbnail pull-left"></div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                dolor in reprehenderit in voluptate</p>
+                <hr>
+
+                <div class="image1"><img src="images/ScarlettJohnson.jpg" class="thumbnail pull-left"></div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                dolor in reprehenderit in voluptate</p>
+                <hr>
+
+                <div class="image1"><img src="images/meganFox1.jpg" class="thumbnail pull-left"></div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                dolor in reprehenderit in voluptate</p>
+                <hr>
+
+                <div class="image1"><img src="images/KristenStewart.jpg" class="thumbnail pull-left"></div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                dolor in reprehenderit in voluptate</p>
+                <hr>
+
+                <div class="image1"><img src="images/amyAdams.jpg" class="thumbnail pull-left"></div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                dolor in reprehenderit in voluptate</p>
+                <hr>
+              </div>
+            </div>
+                
+                                            <!-- Google map -->
+              <!--   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108704.38030245587!2d74.80007970993535!3d31.63352498283518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0xeea2605bee84ef7d!2sAmritsar%2C+Punjab!5e0!3m2!1sen!2sin!4v1478779476139" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+
+          </div>                                  <!-- Left column end -->
+          <div class="col-sm-6 googleFontBoxOffice">
+            <h4> Box Office Collection </h4>
+            <div class="list-group">
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> The Lucky One </h3><p> <small> Weekend </small> $7562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> A walk to remember </h3><p> <small> Weekend </small> $3562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Bruce Almighty </h3><p> <small> Weekend </small> $5562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Wedding Crashers  </h3><p> <small> Weekend </small> $6562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> What happened in Vegas </h3><p> <small> Weekend </small> $4562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> That Awkward Moment </h3><p> <small> Weekend </small> $2562 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Just Friends </h3><p> <small> Weekend </small> $1760 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> The Proposal </h3><p> <small> Weekend </small> $5560 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> About time </h3><p> <small> Weekend </small> $7560 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> The First Time </h3><p> <small> Weekend </small> $6660 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Now you see me </h3><p> <small> Weekend </small> $83560 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Don Jon </h3><p> <small> Weekend </small> $3760 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> Larry Crowne </h3><p> <small> Weekend </small> $5530 </p></a>
+              <a href="boxOffice.html" class="list-group-item"><h3 class="list-hroup-item-heading"> When in Rome </h3><p> <small> Weekend </small> $4580 </p></a>
+
+            </div>                                <!-- List group ends -->
+          </div>                                  <!-- Right column ends -->
+
+        </div>                                    <!-- Extra end -->
+
+
+
+	</div>                                           <!-- Container ends -->
+
+                             <!-- Footer starts -->
+  <footer>
+    <div class="row">
+      <div class="col-sm-4">
+         <h4> Follow us on: </h4>
+         <div class="footerIcons1">
+          <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-pinterest-square fa-4x" aria-hidden="true"></i>
+           <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
+        </div>
+      </div>
+                                          <!-- Column end -->
+      <div class="col-sm-4 middleList">
+        <h6> About us </h6>
+        <ul class="unstyled">
+          <li><a href="#"> Services </a></li>
+          <li><a href="#"> About us </a></li>
+          <li><a href="#"> Privacy Policy </a></li>
+          <li><a href="#"> Help </a></li>
+          <li><a href="#"> Contact us </a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 footerIcons3">
+        <ul class="unstyled">
+          <li class="image1"><img src="images/Android-app.png"></li>
+          <li class="image1"><img src="images/App-Store.png"></li>
+          <li class="image1"><img src="images/WindowsStore.png"></li>
+        </ul>
+      </div>
+
+    </div>                                    <!-- Row end -->
+  </footer>
+      
+
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+	
+	</body>
+</html>
